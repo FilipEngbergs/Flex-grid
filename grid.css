@@ -1,0 +1,85 @@
+.container {
+  height: 700px;
+  display: grid;
+  border: 2px solid black;
+  grid-template-rows: 150px 1fr 150px;
+  grid-template-columns: 20px 1fr 20px;
+  grid-template-areas:
+    ". box1 ."
+    ". box2 ."
+    ". box3 .";
+  gap: 20px;
+  padding: 10px;
+}
+
+.box1 {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(223, 187, 114);
+  border: 2px solid black;
+  border-radius: 10px;
+  grid-area: box1;
+  grid-template-rows: 150px;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "ul ol";
+}
+ul {
+  grid-area: ul;
+}
+ol {
+  grid-area: ol;
+}
+
+.box2 {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(251, 225, 172);
+  border: 2px solid black;
+  border-radius: 10px;
+  grid-area: box2;
+}
+
+.box3 {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(223, 187, 114);
+  border: 2px solid black;
+  border-radius: 10px;
+  grid-area: box3;
+}
+
+table,
+th,
+td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+@media screen and (min-width: 768px) {
+  body {
+    display: grid;
+    justify-content: center;
+  }
+
+  .container {
+    width: 900px;
+    padding: 20px;
+    grid-template-rows: 40px 1fr 40px;
+    grid-template-columns: 150px 1fr 150px;
+    grid-template-areas:
+      ". . ."
+      "box1 box2 box3"
+      ". . .";
+  }
+
+  .box1 {
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 150px;
+    grid-template-areas:
+      "ul"
+      "ol";
+  }
+}

@@ -1,0 +1,80 @@
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 650px;
+  border: 2px solid black;
+}
+
+.container {
+  width: 90%;
+  height: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.container > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid black;
+  border-radius: 10px;
+  align-self: stretch;
+  flex-grow: 2;
+  background-color: rgb(251, 225, 172);
+  flex-basis: 1vmax;
+}
+
+.container > div:first-child {
+  flex-wrap: wrap;
+  flex-grow: 1;
+  background-color: rgb(223, 187, 114);
+}
+
+.container > div:last-child {
+  flex-grow: 1;
+  background-color: rgb(223, 187, 114);
+}
+
+legend {
+  font-size: 22px;
+}
+
+table,
+th,
+td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  padding: 5px;
+}
+
+@media screen and (min-width: 768px) {
+  body {
+    display: flex;
+    justify-content: center;
+  }
+
+  .wrapper {
+    width: 850px;
+    height: 600px;
+    border: none;
+    background-image: url(../Flex&grid/images/dator.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .container {
+    height: 60%;
+    width: 70%;
+    flex-direction: row;
+  }
+
+  .container > div {
+    height: 80%;
+    align-self: flex-start;
+  }
+}

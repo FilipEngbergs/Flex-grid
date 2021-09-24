@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+    <link href="grid.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="box1">
+            <ul>
+                <li>Lila</li>
+                <li>Röd</li>
+                <li>Blå</li>
+                <li>Rosa</li>
+            </ul>
+            <ol>
+                <li>Lila</li>
+                <li>Röd</li>
+                <li>Blå</li>
+                <li>Rosa</li>
+            </ol> 
+        </div>
+        <div class="box2">
+            <form>
+                <fieldset fontsize: >
+                <legend>Formulär</legend>
+                <label for="fname">Förnamn:</label><br />
+                <input type="text" id="fnamn" name="fname" required placeholder="Förnamn" autocomplete="on" /><br/>
+                <label for="lname">Efternamn:</label><br/>
+                <input type="text" id="lname" name="lname" required placeholder="Efternamn"><br/>
+                <label for="number">Telefonnummer:</label><br/>
+                <input type="tel" id="nummer" name="number" required placeholder="###" pattern="[0-9]{3}"  size="1" maxlength="3">
+                <label>-</label>
+                <input type="tel" id="nummer" name="number" required placeholder="#######" pattern="[0-9]{7}" aria-label="7-digit area code" size="4" maxlength="7"><br/>
+                <label for="epost">Epost:</label><br/>
+                <input type="email" id="epost" name="epost" required placeholder="Epost"><br/>
+                <input type="submit"¨id="skicka" name="skicka" value="Skicka"/>
+                <input type="reset" name="rensa" id="rensa" value="Rensa" />
+                </fieldset>
+            </form>
+        </div>
+        <div class="box3">
+            <table>
+                <tr>
+                    <th>Namn</th>
+                    <th>Storlek</th>
+                    <th>Färg</th>
+                </tr>
+                <tr>
+                    <td>Stefan</td>
+                    <td>167</td>
+                    <td>Grön</td>
+                </tr>
+                <tr>
+                    <td>Anders</td>
+                    <td>155</td>
+                    <td>Gul</td>
+                </tr>
+                <tr>
+                    <td>Joseph</td>
+                    <td>152</td>
+                    <td>Lila</td>
+                </tr>
+                <tr>
+                    <td>Lukas</td>
+                    <td>142</td>
+                    <td>Blå</td>
+                </tr>
+            </table>
+        </div>
+    </div>   
+</body>
+</html>
